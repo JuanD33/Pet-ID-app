@@ -1,13 +1,13 @@
 // Your Firebase configuration
 const firebaseConfig = {
- apiKey: "AIzaSyDkUZWBzCvO6UDblJMvc5suwgd-7TWPMOM",
+  apiKey: "AIzaSyDkUZWBzCvO6UDblJMvc5suwgd-7TWPMOM",
   authDomain: "flying-chimp-pet-tag.firebaseapp.com",
   projectId: "flying-chimp-pet-tag",
   storageBucket: "flying-chimp-pet-tag.appspot.com",
   messagingSenderId: "429165684650",
   appId: "1:429165684650:web:665422bbce694ea658edd3",
   measurementId: "G-EBCWWSBJ4G"
-"
+
 };
 
 // Initialize Firebase
