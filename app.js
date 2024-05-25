@@ -10,8 +10,10 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+firebase.initializeApp(firebaseConfig);
+
+// Get the Auth object after Firebase initialization
+const auth = firebase.auth();
 
 // Authentication
 function signIn() {
