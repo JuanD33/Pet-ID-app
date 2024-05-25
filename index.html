@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Profiles</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Pet Profiles</h1>
+  <div id="auth-container">
+    <h2>Sign In</h2>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="signIn()">Sign In</button>
+    <button onclick="signUp()">Sign Up</button>
+  </div>
+  <div id="profile-container" style="display:none;">
+    <h2>Your Pets</h2>
+    <div id="profile-list"></div>
+    <button onclick="showCreateForm()">Create New Profile</button>
+    <div id="form-container"></div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
