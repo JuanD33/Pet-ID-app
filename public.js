@@ -7,12 +7,11 @@ const firebaseConfig = {
   messagingSenderId: "429165684650",
   appId: "1:429165684650:web:665422bbce694ea658edd3",
   measurementId: "G-EBCWWSBJ4G"
-
 };
 
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-const db = firebase.firestore();
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 function getProfile(petId) {
   db.collection('profiles').doc(petId).get().then(doc => {
